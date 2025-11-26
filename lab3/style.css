@@ -1,0 +1,62 @@
+/* Базові стилі */
+.body
+{
+    background: #f3f2f3;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+.block {
+    height: 750px;
+    width: 950px;
+    margin: 0px auto;
+    background: black;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+}
+
+/* Кольори та блоки повної ширини */
+.header-block {
+    background-color: #5d9ad8; /* Синій */
+    width: 100%;
+    height: 25%;
+}
+.middle-strip {
+    background-color: #d17596; /* Рожевий */
+    width: 100%;
+    height: 25%;
+}
+
+
+.float-layout .left-img {
+    float: left;
+    width: 70%; 
+    background-color: lightgreen;
+}
+.float-layout .right-text {
+    float: left; /* або right */
+    width: 30%; 
+    background-color: green;
+}
+
+.float-layout .clearfix {
+    clear: both;
+}
+
+
+
+.flex-layout .content-wrapper {
+    display: flex; 
+}
+
+.flex-layout .left-img {
+    /* float прибрано */
+    width: 70%; 
+    background-color: lightgreen;
+}
+
+.flex-layout .right-text {
+    /* float прибрано */
+    width: 30%; 
+        background-color: green;
+}
