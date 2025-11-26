@@ -1,0 +1,122 @@
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+#row1 {
+    background-color: #068f8f; 
+    color: white;             
+}
+#row2 {
+    background-color: #f5f506; 
+    color: black;             
+}
+
+
+#row1:hover {
+    background-color: #f5f506; 
+    color: black;             
+}
+#row2:hover {
+    background-color: #068f8f; 
+    color: white;             
+}
+
+
+/* ==================================== */
+/* 2. ЗАВДАННЯ 2: ДВА ТЕЛЕФОНИ (POSITION та TRANSFORM) */
+/* ==================================== */
+
+/* Базовий контейнер для візуальної ідентичності та розміщення поруч */
+.phone-container {
+    width: 200px;
+    height: 400px;
+    margin: 50px 50px;
+    text-align: center; 
+    display: inline-block; /* Розташування телефонів поруч */
+    vertical-align: top;
+}
+
+/* Корпус телефону */
+.phone-body {
+    width: 100%;
+    height: 100%;
+    background-color: #d8e5c8; /* Колір корпусу (світло-зелений) */
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 15px; 
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Використовуємо position: relative для внутрішнього розміщення елементів */
+    position: relative; 
+}
+
+/* Екран телефону */
+.phone-screen {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    line-height: 150px; 
+}
+
+/* Клавіатура: використовуємо Grid для сітки 3x3 */
+.phone-keypad {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Круглі кнопки */
+.key {
+    width: 35px;
+    height: 35px;
+    background-color: #4a4a6b; /* Колір кнопок (темно-фіолетовий) */
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+
+/* ------------------------------------ */
+/* 2.1 СПЕЦИФІЧНИЙ СТИЛЬ: POSITION */
+/* ------------------------------------ */
+/* Демонстрація використання position: relative (яке вже використовується
+   у phone-body, але тут ми явно його залишаємо для виконання вимоги) */
+.phone-position .phone-body {
+    position: relative; 
+    top: 0; 
+    left: 0; 
+}
+
+/* ------------------------------------ */
+/* 2.2 СПЕЦИФІЧНИЙ СТИЛЬ: TRANSFORM */
+/* ------------------------------------ */
+/* Використовуємо transform: translate(0,0) для ідентичного вигляду, 
+   але демонструємо саму властивість transform */
+.phone-transform .phone-body {
+    transform: translate(0, 0) rotate(0deg); 
+}
+
+/* Демонстрація можливостей transform на інтерактивному елементі */
+.phone-transform .key:hover {
+    transform: scale(1.2); /* Збільшення розміру при наведенні */
+    background-color: #5d5db1;
+}
