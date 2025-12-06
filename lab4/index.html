@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шереметьєв Д.С. | ІА-31 | Лаб. 4 | Вар. 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Шереметьєв Дмитро Сергійович</h2>
+        <p>Народився 6 серпня 2005 року у місті Кропивницький.</p>
+        <p>Освіта: Школа №32, м. Кропивницький</p>
+        <p>НТУУ КПІ імені Ігоря Сікорського.</p>
+    </div>
+
+    <h3>Мої Хобі</h3>
+    <ul>
+        <li>Комп'ютерні ігри</li>
+        <li>Слухати музику</li>
+        <li>Грати в більярд</li>
+        <li>Займатися спортом</li>
+    </ul>
+
+    <h3>Улюблені фільми</h3>
+    <ol>
+        <li>Сім (Se7en)</li>
+        <li>П'ять ночей з Фреді (Five Nights at Freddy's)</li>
+        <li>Залізна людина (Iron Man)</li>
+        <li>Бетмен (Batman)</li>
+    </ol>
+
+    <h3>Улюблене місто: Кропивницький</h3>
+    
+    <p id="city-description">
+        Кропивницький (до 2016 року — Кіровоград) — місто в центральній частині
+        України, адміністративний центр Кіровоградської області. Це місто відоме
+        своїм історичним та культурним спадком, зокрема, тут знаходиться театр
+        імені Марка Кропивницького, один із перших професійних театрів в Україні.
+        Місто має затишну атмосферу та багато зелених зон.
+    </p>
+
+    <a href="https://kr-rada.gov.ua/" target="_blank" id="city-link">
+       <img
+        id="city-image"
+        src="../lab4/krop.jpg" 
+        alt="Фото міста Кропивницький"
+        style="width: 500px; height: auto"
+      />
+    </a>
+
+    <div id="controls">
+        <button onclick="addImage()">Додати</button>
+        <button onclick="increaseImage()">Збільшити</button>
+        <button onclick="decreaseImage()">Зменшити</button>
+        <button onclick="deleteImage()">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
