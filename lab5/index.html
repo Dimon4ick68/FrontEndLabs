@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шереметьєв Д.С. | ІА-31 | Лаб. 5 | Вар. 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Завдання 1: Валідація форми</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label>ПІБ (Приклад: Шереметьєв Д.С.):</label>
+                <input type="text" id="fullname" placeholder="ТТТТТТ Т.Т.">
+            </div>
+            <div class="form-group">
+                <label>Дата народження (06.08.2005):</label>
+                <input type="text" id="birthdate" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ">
+            </div>
+            <div class="form-group">
+                <label>Адреса (м. Кропивницький):</label>
+                <input type="text" id="address" placeholder="м. ТТТТТТТ">
+            </div>
+            <div class="form-group">
+                <label>e-mail (test@gmail.com):</label>
+                <input type="text" id="email" placeholder="тттттт@ттттт.com">
+            </div>
+            <div class="form-group">
+                <label>Telegram (@dimon):</label>
+                <input type="text" id="telegram" placeholder="@Т_ТТТТТ">
+            </div>
+            <button type="submit">Підтвердити</button>
+        </form>
+        <div id="result"></div>
+
+        <hr>
+
+        <h2>Завдання 2: Інтерактивна таблиця (Клітинка №6)</h2>
+        
+        <div class="controls">
+            <label>Оберіть колір для кліку: <input type="color" id="colorPicker" value="#00FF00"></label>
+        </div>
+
+        <table id="myTable">
+            </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
