@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.81e3d026.css",
+    "main.js": "./static/js/main.dca1629d.js",
+    "static/js/453.1e703529.chunk.js": "./static/js/453.1e703529.chunk.js",
+    "static/media/krop.jpg": "./static/media/krop.67c5bf064de19eee7fd9.jpg",
+    "index.html": "./index.html",
+    "main.81e3d026.css.map": "./static/css/main.81e3d026.css.map",
+    "main.dca1629d.js.map": "./static/js/main.dca1629d.js.map",
+    "453.1e703529.chunk.js.map": "./static/js/453.1e703529.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81e3d026.css",
+    "static/js/main.dca1629d.js"
+  ]
+}
