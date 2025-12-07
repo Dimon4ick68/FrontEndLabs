@@ -1,6 +1,6 @@
 {
-  "name": "lab7",
   "homepage": ".",
+  "name": "lab7",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
